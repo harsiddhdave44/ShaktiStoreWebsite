@@ -32,7 +32,7 @@ export const Nav = () => {
             <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
             <AcmeLogo />
             <Text b color="inherit" hideIn="xs">
-               ACME
+               Shakti Store
             </Text>
             <Navbar.Content
                hideIn="sm"
@@ -40,7 +40,7 @@ export const Nav = () => {
                   pl: '6rem',
                }}
             >
-               <Dropdown isBordered>
+               {/* <Dropdown isBordered>
                   <Navbar.Item>
                      <Dropdown.Button
                         auto
@@ -115,16 +115,19 @@ export const Nav = () => {
                         +Supreme Support
                      </Dropdown.Item>
                   </Dropdown.Menu>
-               </Dropdown>
+               </Dropdown> */}
                <Navbar.Link isActive href="#">
-                  Customers
+                  Home
+               </Navbar.Link> 
+               <Navbar.Link href="#">
+                  Products
                </Navbar.Link>
-               <Navbar.Link href="#">Pricing</Navbar.Link>
-               <Navbar.Link href="#">Company</Navbar.Link>
+               <Navbar.Link href="#">About Us</Navbar.Link>
+               <Navbar.Link href="#">Contact</Navbar.Link>
             </Navbar.Content>
          </Navbar.Brand>
 
-         <Navbar.Collapse>
+         {/* <Navbar.Collapse>
             {collapseItems.map((item, index) => (
                <Navbar.CollapseItem key={item}>
                   <Link
@@ -187,6 +190,14 @@ export const Nav = () => {
                   }
                />
             </Navbar.Item>
+         </Navbar.Content> */}
+         <Navbar.Content>
+         <Switch
+                  checked={isDark}
+                  onChange={(e) =>
+                     setTheme(e.target.checked ? 'dark' : 'light')
+                  }
+               />
          </Navbar.Content>
       </Navbar>
    );
