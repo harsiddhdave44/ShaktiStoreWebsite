@@ -1,46 +1,46 @@
-import {Button, Dropdown, Link, Navbar, Switch, Text} from '@nextui-org/react';
-import React from 'react';
-import {ModalLogin} from '../modal';
-import {icons} from './icons';
-import {AcmeLogo} from './logo';
-import {useTheme as useNextTheme} from 'next-themes';
-import {useTheme} from '@nextui-org/react';
-import {GithubIcon} from '../icons/GithubIcon';
+import { Navbar, Switch, Text } from "@nextui-org/react";
+import React from "react";
+// import {ModalLogin} from '../modal';
+// import {icons} from './icons';
+import { AcmeLogo } from "./logo";
+import { useTheme as useNextTheme } from "next-themes";
+import { useTheme } from "@nextui-org/react";
+// import { GithubIcon } from "../icons/GithubIcon";
 
 export const Nav = () => {
-   const {setTheme} = useNextTheme();
-   const {isDark, type} = useTheme();
-   const collapseItems = [
-      'Features',
-      'Customers',
-      'Pricing',
-      'Company',
-      'Legal',
-   ];
-   return (
-      <Navbar
-         isBordered
-         css={{
-            'overflow': 'hidden',
-            '& .nextui-navbar-container': {
-               background: '$background',
-               borderBottom: 'none',
-            },
-         }}
-      >
-         <Navbar.Brand>
-            <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
-            <AcmeLogo />
-            <Text b color="inherit" hideIn="xs">
-               Shakti Store
-            </Text>
-            <Navbar.Content
-               hideIn="sm"
-               css={{
-                  pl: '6rem',
-               }}
-            >
-               {/* <Dropdown isBordered>
+  const { setTheme } = useNextTheme();
+  const { isDark, type } = useTheme();
+  const collapseItems = [
+    "Features",
+    "Customers",
+    "Pricing",
+    "Company",
+    "Legal",
+  ];
+  return (
+    <Navbar
+      isBordered
+      css={{
+        overflow: "hidden",
+        "& .nextui-navbar-container": {
+          background: "$background",
+          borderBottom: "none",
+        },
+      }}
+    >
+      <Navbar.Brand>
+        <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
+        <AcmeLogo />
+        <Text b color="inherit" hideIn="xs">
+          Shakti Store
+        </Text>
+        <Navbar.Content
+          hideIn="sm"
+          css={{
+            pl: "6rem",
+          }}
+        >
+          {/* <Dropdown isBordered>
                   <Navbar.Item>
                      <Dropdown.Button
                         auto
@@ -116,18 +116,16 @@ export const Nav = () => {
                      </Dropdown.Item>
                   </Dropdown.Menu>
                </Dropdown> */}
-               <Navbar.Link isActive href="#">
-                  Home
-               </Navbar.Link> 
-               <Navbar.Link href="#">
-                  Products
-               </Navbar.Link>
-               <Navbar.Link href="#">About Us</Navbar.Link>
-               <Navbar.Link href="#">Contact</Navbar.Link>
-            </Navbar.Content>
-         </Navbar.Brand>
+          <Navbar.Link isActive href="#">
+            Home
+          </Navbar.Link>
+          <Navbar.Link href="#">Products</Navbar.Link>
+          <Navbar.Link href="#">About Us</Navbar.Link>
+          <Navbar.Link href="#">Contact</Navbar.Link>
+        </Navbar.Content>
+      </Navbar.Brand>
 
-         {/* <Navbar.Collapse>
+      {/* <Navbar.Collapse>
             {collapseItems.map((item, index) => (
                <Navbar.CollapseItem key={item}>
                   <Link
@@ -191,14 +189,12 @@ export const Nav = () => {
                />
             </Navbar.Item>
          </Navbar.Content> */}
-         <Navbar.Content>
-         <Switch
-                  checked={isDark}
-                  onChange={(e) =>
-                     setTheme(e.target.checked ? 'dark' : 'light')
-                  }
-               />
-         </Navbar.Content>
-      </Navbar>
-   );
+      <Navbar.Content>
+        <Switch
+          checked={isDark}
+          onChange={(e) => setTheme(e.target.checked ? "dark" : "light")}
+        />
+      </Navbar.Content>
+    </Navbar>
+  );
 };
