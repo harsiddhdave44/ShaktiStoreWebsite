@@ -1,6 +1,7 @@
-import { Button, Divider, Input, Text } from "@nextui-org/react";
+import { Divider, Text, Image } from "@nextui-org/react";
 import React from "react";
-import { CheckIcon } from "../icons/CheckIcon";
+import namasteImage from "../../assets/home-image.jpg";
+// import { CheckIcon } from "../icons/CheckIcon";
 import { Box } from "../styles/box";
 import { Flex } from "../styles/flex";
 
@@ -130,7 +131,8 @@ export const Hero = () => {
             },
           }}
         >
-          <img src="mock.png" />
+          {/* <Image src="../../assets/home-image.jpg"></Image> */}
+          <img src="namaste-horizontal.jpg" height="50%" width="40%" />
         </Box>
       </Flex>
       <Divider
