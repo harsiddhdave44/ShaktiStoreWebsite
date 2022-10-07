@@ -132,7 +132,7 @@ export const Hero = () => {
           }}
         >
           {/* <Image src="../../assets/home-image.jpg"></Image> */}
-          <img src="namaste-horizontal.jpg" height="50%" width="40%" />
+          <img src="namaste-horizontal.jpg" alt="a person bowing down" height="50%" width="40%" />
         </Box>
       </Flex>
       <Divider
