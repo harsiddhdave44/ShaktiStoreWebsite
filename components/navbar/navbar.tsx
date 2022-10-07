@@ -28,7 +28,7 @@ export const Nav = () => {
          }}
       >
          <Navbar.Brand>
-            <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
+            <Navbar.Toggle aria-label="toggle navigation" showIn="sm" />
             <AcmeLogo />
             <Text b color="inherit" hideIn="xs">
                ACME
