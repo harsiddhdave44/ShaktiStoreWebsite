@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { Nav } from "../components/navbar/navbar";
 import { Layout } from "../components/navbar/layout";
 import { Hero } from "../components/hero";
-// import { Trusted } from "../components/trusted";
+import { Trusted } from "../components/contact";
 import { Box } from "../components/styles/box";
 // import { Features1 } from "../components/features1";
 // import { Features2 } from "../components/features2";
@@ -20,10 +20,10 @@ const Home: NextPage = () => {
       <Nav />
       <Box as="main">
         <Hero />
-        {/* <Trusted /> */}
         {/* <Features1 /> */}
         {/* <Features2 /> */}
         <Features3 />
+        <Trusted />
         {/* <Testimonials />
         <Statistics />
         <Plans />
