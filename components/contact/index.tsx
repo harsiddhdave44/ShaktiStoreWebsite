@@ -5,6 +5,7 @@ import { InstagramIcon } from '../icons/Instagram';
 import { WhatsappIcon } from '../icons/whatsapp';
 import { AcmeLogo } from '../navbar/logo';
 import { Flex } from '../styles/flex';
+// import { Call}
 
 export const Trusted = () => {
     return (
@@ -57,6 +58,7 @@ export const Trusted = () => {
                     <Grid sm={3} justify="center">
                         <Flex align={'center'} css={{ gap: "0.5rem" }}>
                             <CallIcon />
+
                             <Text weight={'semibold'} span size={'$lg'}>
                                 Mobile
                             </Text>
