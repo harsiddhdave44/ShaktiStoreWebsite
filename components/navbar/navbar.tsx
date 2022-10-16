@@ -18,7 +18,7 @@ export const Nav = () => {
    ];
    return (
       <Navbar
-         isBordered
+         isBordered variant="sticky"
          css={{
             'overflow': 'hidden',
             '& .nextui-navbar-container': {
@@ -39,7 +39,7 @@ export const Nav = () => {
                   pl: '6rem',
                }}
             >
-               <Navbar.Link isActive href="#">
+               <Navbar.Link isActive href="#" css={{ color: '$primary' }}>
                   Home
                </Navbar.Link>
                <Navbar.Link href="#">
@@ -64,17 +64,17 @@ export const Nav = () => {
                   </Link>
                </Navbar.CollapseItem>
             ))}
-            <Navbar.CollapseItem>
+            {/* <Navbar.CollapseItem>
                <Switch
                   checked={isDark}
                   onChange={(e) =>
                      setTheme(e.target.checked ? 'dark' : 'light')
                   }
                />
-            </Navbar.CollapseItem>
+            </Navbar.CollapseItem> */}
          </Navbar.Collapse>
          <Navbar.Content>
-            <Navbar.Item hideIn={'sm'}>
+            <Navbar.Item>
                <Switch
                   checked={isDark}
                   onChange={(e) =>

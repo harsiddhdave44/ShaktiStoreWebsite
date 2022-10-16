@@ -27,7 +27,7 @@ export const Hero = () => {
         <Box
           css={{
             pt: "$13",
-
+            pr: "5vw",
             display: "flex",
             flexDirection: "column",
             gap: "$5",
@@ -54,6 +54,7 @@ export const Hero = () => {
             >
               for{" "}
             </Text> */}
+            <br />
             <Text
               h1
               css={{
@@ -76,52 +77,6 @@ export const Hero = () => {
           >
             The one stop shop for all your needs
           </Text>
-
-          {/* <Flex
-            css={{
-              gap: "$8",
-              pt: "$4",
-            }}
-            wrap={"wrap"}
-          >
-            <Input placeholder="Enter your email address" size="lg" />
-            <Button>Start Free Trial</Button>
-          </Flex> */}
-          {/* <Flex
-            wrap={"wrap"}
-            css={{
-              gap: "$8",
-              py: "$7",
-              "@sm": {
-                py: "$4",
-              },
-            }}
-          > */}
-          {/* <Flex
-              css={{
-                color: "$accents7",
-                alignItems: "center",
-              }}
-            >
-              <CheckIcon /> No credit card required.
-            </Flex>
-            <Flex
-              css={{
-                color: "$accents7",
-                alignItems: "center",
-              }}
-            >
-              <CheckIcon /> 14-day free trial.
-            </Flex>
-            <Flex
-              css={{
-                color: "$accents7",
-                alignItems: "center",
-              }}
-            >
-              <CheckIcon /> Cancel anytime.
-            </Flex> */}
-          {/* </Flex> */}
         </Box>
         <Box
           css={{
@@ -132,7 +87,7 @@ export const Hero = () => {
           }}
         >
           {/* <Image src="../../assets/home-image.jpg"></Image> */}
-          <img src="namaste-horizontal.jpg" alt="a person bowing down" height="50%" width="40%" />
+          <Image src={'namaste-horizontal.jpg'} alt="a person bowing down" css={{ p: '10px' }} />
         </Box>
       </Flex>
       <Divider

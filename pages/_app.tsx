@@ -1,12 +1,14 @@
 import '../styles/globals.css';
-import type {AppProps} from 'next/app';
-import {createTheme, NextUIProvider} from '@nextui-org/react';
-import {ThemeProvider as NextThemesProvider} from 'next-themes';
+import type { AppProps } from 'next/app';
+import { createTheme, NextUIProvider } from '@nextui-org/react';
+import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
 const lightTheme = createTheme({
    type: 'light',
    theme: {
-      colors: {},
+      colors: {
+         primary: '#F5A524',
+      },
    },
 });
 
@@ -17,7 +19,7 @@ const darkTheme = createTheme({
    },
 });
 
-function MyApp({Component, pageProps}: AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
    return (
       <NextThemesProvider
          defaultTheme="system"

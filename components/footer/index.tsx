@@ -36,7 +36,7 @@ export const Footer = () => {
               'gap': '$10',
               'justifyContent': 'center',
               '@md': {
-                justifyContent: 'space-between',
+                // justifyContent: 'space-between',
               },
             }}
           >
@@ -58,15 +58,6 @@ export const Footer = () => {
               <Link href="#" color="text">
                 Contact Us
               </Link>
-            </Flex>
-            <Flex
-              css={{
-                gap: '$6',
-              }}
-            >
-              <Text span css={{ color: '$accents8' }}>
-                © Copyright 2021 Acme Inc.
-              </Text>
             </Flex>
           </Flex>
         </Box>

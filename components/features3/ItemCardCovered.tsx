@@ -25,9 +25,9 @@ export const ItemCardCovered = () => {
                     height="20vh"
                     alt="Card image background"
                 />
-                <Card.Body>
+                {/* <Card.Body>
                     <Text>Small description of the product.Small description of the product.Small description of the product.</Text>
-                </Card.Body>
+                </Card.Body> */}
                 {/* <Card.Body>
                 <Flex css={{ gap: "0.5rem" }} direction={"column"}>
                     <Flex direction={"row"} css={{ gap: "0.5%" }}>
