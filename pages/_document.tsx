@@ -30,7 +30,8 @@ class MyDocument extends Document {
                rel="stylesheet"
             />
             <Head>{CssBaseline.flush()}</Head>
-
+            <link href="https://cdn.maptiler.com/maplibre-gl-js/v2.4.0/maplibre-gl.css" rel="stylesheet" />
+            <script defer src="https://cdn.maptiler.com/maplibre-gl-js/v2.4.0/maplibre-gl.js"></script>
             <body>
                <Main />
                <NextScript />
