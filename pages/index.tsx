@@ -13,7 +13,7 @@ import { Features3 } from "../components/features3";
 // import { Faq } from "../components/faq";
 // import { Trial } from "../components/trial";
 import { Footer } from "../components/footer";
-import { Map } from "../components/map";
+// import { Map } from "../components/map";
 const Home: NextPage = () => {
   return (
     <Layout>
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         <Plans />
         <Faq /> */}
         {/* <Trial /> */}
-        <Map />
+        {/* <Map /> */}
         <Footer />
       </Box>
     </Layout>
