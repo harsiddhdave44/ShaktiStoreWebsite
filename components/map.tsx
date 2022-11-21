@@ -1,10 +1,10 @@
 
-import { useEffect, useRef  } from "react";
+import { useEffect, useRef } from "react";
 export const Map = () => {
   const ref = useRef();
-  
+
   useEffect(() => {
-    if(window.maplibregl){
+    if (window.maplibregl) {
       const key = '78NvFDestLKv4C8SNcEn';
       const map = new window.maplibregl.Map({
         container: 'map', // container id
@@ -15,6 +15,6 @@ export const Map = () => {
       map.addControl(new window.maplibregl.NavigationControl(), 'top-right');
     }
   });
-  
-    return <div ref={ref} id="map">test</div>;
+
+  return <div ref={ref} id="map">test</div>;
 }
