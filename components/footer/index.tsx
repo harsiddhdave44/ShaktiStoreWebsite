@@ -2,10 +2,9 @@ import { Divider, Text, Link } from '@nextui-org/react';
 import React, { useEffect } from 'react';
 import { Box } from '../styles/box';
 import { Flex } from '../styles/flex';
-import _testRigorIntegrator from '../../plugins/testRigor';
 
 export const Footer = () => {
-  useEffect(() => { _testRigorIntegrator }, []);
+
   return (
     <Flex
       css={{

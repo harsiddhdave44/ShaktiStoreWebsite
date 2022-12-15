@@ -23,8 +23,6 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "plugins/testRigor.js",
-    "plugins/testRigor.js"
   ],
   "exclude": [
     "node_modules"
